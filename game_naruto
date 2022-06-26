@@ -4,6 +4,17 @@ import java.util.Scanner;
 import java.lang.Math;
 public class Main
 {
+    public static void delay(int ms)
+{
+    try
+    {
+        Thread.sleep(ms);
+    }
+    catch(InterruptedException ex)
+    {
+        Thread.currentThread().interrupt();
+    }
+}
     public static void main(String[] args) {
         Scanner sc = new Scanner (System.in);
         System.out.println("Welcome to Naruto's scroll quest" + '\n'+ "Type start to start");
@@ -12,74 +23,30 @@ public class Main
         switch (start_end){
             case "start" :
                 System.out.println("In this game you will have to type your way to success, you will be able to control Naruto and feel the life of a ninja in a kind of Character user interface"+'\n'+ "You will have two bars (numbers actually) one for amount of chakra you have and other for the health, you will also have the chakra of the nine tailed fox, but it can only be activated with a cheat-code, that can only be provided by the creator- Arpan vohra"+ '\n'+"Also if you run out of health, you will have to re-start the entire game"+ '\n'+ "Hope you enjoy it!");
-                try
-{
-    Thread.sleep(10000);
-}
-catch(InterruptedException ex)
-{
-    Thread.currentThread().interrupt();
-}
+               delay(4500);
                 System.out.println("Naruto was doing his ninja training as usual, when suddenly" + '\n'+ "Puff!"+'\n'+ "His sensei Kakashi appears"+'\n'+ "KAKASHI: Naruto, I have a very important mission for you");
-               try
-{
-    Thread.sleep(3500);
-}
-catch(InterruptedException ex)
-{
-    Thread.currentThread().interrupt();
-}
-               System.out.println("NARUTO: What is it sensei?");
-              try
-{
-    Thread.sleep(3500);
-}
-catch(InterruptedException ex)
-{
-    Thread.currentThread().interrupt();
-}
+              delay(3500);
+              System.out.println("NARUTO: What is it sensei?");
+              delay(3500);
               System.out.println("KAKASHI: Go to the Land Hidden in Sand, in the Kazekage's secret room, there is a secret scroll which contains the secrets about the Land Hidden in the Sand  ");
- try
-{
-    Thread.sleep(3500);
-}
-catch(InterruptedException ex)
-{
-    Thread.currentThread().interrupt();
-}
+delay(3500);
  System.out.println("NARUTO: Believe it ! I will have it all done! ");
- try
-{
-    Thread.sleep(3500);
-}
-catch(InterruptedException ex)
-{
-    Thread.currentThread().interrupt();
-}
+ delay(3500);
  System.out.println("KAKASHI: That's the spirit, although i was looking for Sasuke too, this mission was for both of you, well, I shall send him to catch you up as soon as I find him! Now go Naruto, and don't die");
- try
-{
-    Thread.sleep(3500);
-}
-catch(InterruptedException ex)
-{
-    Thread.currentThread().interrupt();
-}
+ delay(3500);
  System.out.println("NARUTO: Don't worry sensei, you can leave it all to me!"+ '\n'+ "Naruto left without wasting any time.");
                 int Chakra= 180;
                 int FoxChakra = 800;
-                for(int lahsgharg=1; lahsgharg <=2000;lahsgharg++){
-                    
-                }
+               delay(4000);
                 String [] Jutsu = {"Shadow Clone", "Summon a frog", "Transformation jutsu"};
                 String [] Physicalattacks = {"Kick", "Punch", "Shuriken", "Kunai knife"};
                 System.out.println("Please choose your jutsus' and physical attacks"+ '\n' + "Note: you are only allowed to choose 3 physical attacks and 2 justsus' choose wisely!.");
                 System.out.println("Here are your justsus':"+'\n'+Arrays.toString(Jutsu));
                 System.out.println("Choose your first jutsu");
-                String  userchjutsu1 = sc.next() ;
+                String  userchjutsu1 = sc.nextLine() ;
                 userchjutsu1 = userchjutsu1.toLowerCase();
                 System.out.println("Choose your second jutsu");
-                String userchjutsu2 = sc.next();
+                String userchjutsu2 = sc.nextLine();
                 userchjutsu2 = userchjutsu2.toLowerCase();
                 System.out.println("Great choice!"+ '\n'+ "Here are your Physical attacks"+ '\n' + Arrays.toString(Physicalattacks));
                 System.out.println("Choose your first attack");
@@ -89,16 +56,8 @@ catch(InterruptedException ex)
                 String userattack2 = sc.next();
                 userattack2 = userattack2.toLowerCase();
                 System.out.println("Naruto goes on to his journey");
-                 try
-    {
-        Thread.sleep(ms);
-    }
-    catch(InterruptedException ex)
-    {
-        Thread.currentThread().interrupt();
-    }
-    System.out.println("")
-       
+                System.out.println("Naruto f");
+
     }
 }
  }
